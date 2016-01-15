@@ -10,7 +10,7 @@ xhr.setRequestHeader("Accept", "application/vnd.github.3.raw");
 xhr.send();
 
 xhr.onload = function(e){
-   dados = xhr.response;
+   dados = JSON.parse(xhr.response);
    console.log(dados.fruta);
 }
 
